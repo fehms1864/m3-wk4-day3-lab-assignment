@@ -1,0 +1,35 @@
+{
+  "name": "m3-wk4-day3-lab-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lite": "lite-server",
+    "watch": "nodemon ./start.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/www",
+    "scss": "node-sass -o public/css public/scss/styles.scss",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
+    "startscss": "npm run watch:all"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.4.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.10.0",
+    "http-auth": "^4.1.2",
+    "jquery": "^3.4.1",
+    "mongoose": "^5.12.0",
+    "popper.js": "^1.12.9",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "nodemon": "^2.0.7",
+    "onchange": "^7.1.0",
+    "parallelshell": "^3.0.1",
+    "node-sass": "^9.0.0"
+  }
+}

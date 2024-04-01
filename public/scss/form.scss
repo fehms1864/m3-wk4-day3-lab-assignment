@@ -1,0 +1,77 @@
+/* css for registration form and errors*/
+/* Styles for listing table */
+body {
+	padding: 40px 10px;
+	background-color: #eee;
+}
+.listing-reg {
+	h1 {
+		text-align: center;
+		margin: 0 0 2rem;
+	}
+}
+#registrationform {
+	float: right;
+	width: 60%;
+	margin-top: 1em;
+	padding: 3em 10em 3em 10em;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+
+	h2 {
+		padding: 2px 0;
+		text-align: center;
+		font-size: 2em;
+	}
+	form {
+		margin-top: 30px;
+	}
+	input {
+		width: 100%;
+		margin: 0px 0 10px;
+	}
+	.btn {
+		flex: 1 0 100%;
+		background-color: #daaa0e;
+		margin-top: 20px;
+		color: #fff;
+	}
+}
+.my-errors {
+	margin: 0 auto 1rem auto;
+	padding: 0;
+    list-style-type: none;
+	color: #333;
+	font-size: 1rem;
+	display: table;
+	li {
+		&::before {
+			content: "! Error : ";
+			color: #f00;
+			font-weight: bold;
+		}
+	}
+}
+.listing-table {
+	width: 100%;
+	padding-right: 3em;
+	margin: 1em 3em 0 10em;
+	
+	th {
+		padding: 10px;
+		border-bottom: 1px solid #666;
+		background: #000;
+		color: #fff;
+		&:first-child {
+			border-right: 1px solid #666;
+		}
+	}
+	td {
+		padding: 10px;
+		border-bottom: 1px solid #666;
+		&:first-child {
+			border-right: 1px solid #666;
+		}
+	}
+}

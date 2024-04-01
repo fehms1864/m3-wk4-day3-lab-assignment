@@ -1,0 +1,164 @@
+/* Nesting */
+/* SCSS */
+nav.left {
+  font-size: 1em;
+  font-weight: bold;
+  float: left; }
+  nav.left ul {
+    list-style-type: none; }
+    nav.left ul li {
+      float: left;
+      margin: 0 5px 0 0;
+      color: white; }
+      nav.left ul li a {
+        text-decoration: none;
+        color: white; }
+        nav.left ul li a:hover {
+          text-decoration: underline; }
+
+nav.right {
+  margin-right: 3rem;
+  font-size: 1em;
+  font-weight: bold;
+  float: right; }
+  nav.right ul {
+    list-style-type: none; }
+    nav.right ul li {
+      float: right;
+      margin: 0 5px 0 0;
+      color: white; }
+      nav.right ul li a {
+        text-decoration: none;
+        color: white; }
+        nav.right ul li a:hover {
+          text-decoration: underline; }
+
+/* css for registration form and errors*/
+/* Styles for listing table */
+body {
+  padding: 40px 10px;
+  background-color: #eee; }
+
+.listing-reg h1 {
+  text-align: center;
+  margin: 0 0 2rem; }
+
+#registrationform {
+  float: right;
+  width: 60%;
+  margin-top: 1em;
+  padding: 3em 10em 3em 10em;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  #registrationform h2 {
+    padding: 2px 0;
+    text-align: center;
+    font-size: 2em; }
+  #registrationform form {
+    margin-top: 30px; }
+  #registrationform input {
+    width: 100%;
+    margin: 0px 0 10px; }
+  #registrationform .btn {
+    flex: 1 0 100%;
+    background-color: #daaa0e;
+    margin-top: 20px;
+    color: #fff; }
+
+.my-errors {
+  margin: 0 auto 1rem auto;
+  padding: 0;
+  list-style-type: none;
+  color: #333;
+  font-size: 1rem;
+  display: table; }
+  .my-errors li::before {
+    content: "! Error : ";
+    color: #f00;
+    font-weight: bold; }
+
+.listing-table {
+  width: 100%;
+  padding-right: 3em;
+  margin: 1em 3em 0 10em; }
+  .listing-table th {
+    padding: 10px;
+    border-bottom: 1px solid #666;
+    background: #000;
+    color: #fff; }
+    .listing-table th:first-child {
+      border-right: 1px solid #666; }
+  .listing-table td {
+    padding: 10px;
+    border-bottom: 1px solid #666; }
+    .listing-table td:first-child {
+      border-right: 1px solid #666; }
+
+/* Variables */
+html {
+  font-size: 1em;
+  width: 75%; }
+
+body {
+  font-family: Arial, Helvetica, Sans-Serif;
+  background: #daaa0e; }
+
+header {
+  height: 50px;
+  width: 1350px;
+  margin: 0.8em auto 1em auto;
+  display: flex;
+  justify-content: space-between; }
+
+main {
+  background: white;
+  width: 1350px;
+  min-height: 535px;
+  padding: 1.5%;
+  margin: 0 auto;
+  display: block; }
+  main #intro-image {
+    float: right;
+    width: 60%; }
+    main #intro-image img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover; }
+  main #intro-text {
+    width: 40%;
+    height: 500px;
+    float: left;
+    background: #d4d5d8;
+    text-align: center;
+    padding-top: 8em; }
+    main #intro-text h3 {
+      font-size: 2em;
+      color: #313130;
+      margin-top: 40px; }
+    main #intro-text span {
+      font-family: "Sacramento", cursive;
+      font-size: 2em; }
+    main #intro-text p {
+      margin-top: 20px; }
+  main #thankYou {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1em; }
+
+footer {
+  width: 1350px;
+  margin: 2em auto;
+  padding-left: 40px; }
+  footer p {
+    font-size: 0.85em; }
+
+button, .submit-buttton {
+  color: white;
+  width: 150px;
+  height: 40px;
+  background: #daaa0e;
+  margin-top: 2em; }
+
+.submit-buttton {
+  border: 1px #313130; }
