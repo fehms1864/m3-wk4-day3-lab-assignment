@@ -14,6 +14,7 @@
     "startscss": "npm run watch:all"
   },
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "body-parser": "^1.19.0",
     "bootstrap": "^4.4.1",
     "dotenv": "^8.2.0",
@@ -27,9 +28,9 @@
   },
   "devDependencies": {
     "lite-server": "^2.6.1",
+    "node-sass": "^9.0.0",
     "nodemon": "^2.0.7",
     "onchange": "^7.1.0",
-    "parallelshell": "^3.0.1",
-    "node-sass": "^9.0.0"
+    "parallelshell": "^3.0.1"
   }
 }
